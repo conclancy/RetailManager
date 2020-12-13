@@ -35,7 +35,8 @@ namespace WPFUserInterface
             // Ensures that there is one place all events are published and listened for. 
             _container
                 .Singleton<IWindowManager, WindowManager>()
-                .Singleton<IEventAggregator, EventAggregator>();
+                .Singleton<IEventAggregator, EventAggregator>()
+                .Singleton<IApiHelper, ApiHelper>();
 
             GetType().Assembly.GetTypes()
                 .Where(type => type.IsClass)

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WPFUserInterface.Helpers;
 
 namespace WPFUserInterface.ViewModels
 {
@@ -11,6 +12,12 @@ namespace WPFUserInterface.ViewModels
     {
         private string _userName;
         private string _password;
+        private IApiHelper _apiHelper;
+
+        public LoginViewModel(IApiHelper apiHelper)
+        {
+            _apiHelper = apiHelper;
+        }
 
         public string UserName
         {
@@ -50,9 +57,16 @@ namespace WPFUserInterface.ViewModels
             }
         }
 
-        public void LogIn ()
+        public async Task LogIn ()
         {
-            Console.WriteLine();
+            try
+            {
+                var result = await _apiHelper.Authenticate(UserName, Password);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
     }
 }
