@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataManager", "DataManager\
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "RetailManagerData", "RetailManagerData\RetailManagerData.sqlproj", "{48D47DAF-0C4D-4653-88E6-6440738F7C49}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFUserInterface", "WPFUserInterface\WPFUserInterface.csproj", "{1B639589-9962-4BAE-A2DE-8C5EFD314336}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{48D47DAF-0C4D-4653-88E6-6440738F7C49}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48D47DAF-0C4D-4653-88E6-6440738F7C49}.Release|Any CPU.Build.0 = Release|Any CPU
 		{48D47DAF-0C4D-4653-88E6-6440738F7C49}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{1B639589-9962-4BAE-A2DE-8C5EFD314336}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B639589-9962-4BAE-A2DE-8C5EFD314336}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B639589-9962-4BAE-A2DE-8C5EFD314336}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B639589-9962-4BAE-A2DE-8C5EFD314336}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
