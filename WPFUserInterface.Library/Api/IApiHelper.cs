@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
-using WPFUserInterface.Models;
+using WPFUserInterface.Library.Models;
 
-namespace WPFUserInterface.Helpers
+namespace WPFUserInterface.Library.Api
 {
     public interface IApiHelper
     {

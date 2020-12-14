@@ -75,12 +75,9 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Bootstrapper.cs" />
-    <Compile Include="Helpers\ApiHelper.cs" />
-    <Compile Include="Helpers\IApiHelper.cs" />
     <Compile Include="Helpers\PasswordBoxHelper.cs" />
-    <Compile Include="Models\AuthenticatedUser.cs" />
     <Compile Include="ViewModels\LoginViewModel.cs" />
-    <Compile Include="ViewModels\ShellViewModel.cs" />
+    <Compile Include="Views\ShellViewModel.cs" />
     <Compile Include="Views\LoginView.xaml.cs">
       <DependentUpon>LoginView.xaml</DependentUpon>
     </Compile>
@@ -127,6 +124,14 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\WPFUserInterface.Library\WPFUserInterface.Library.csproj">
+      <Project>{c5665f77-26cd-4fa8-ae45-90d864c3e76f}</Project>
+      <Name>WPFUserInterface.Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

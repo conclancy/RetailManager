@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using WPFUserInterface.Helpers;
+using WPFUserInterface.Library.Api;
 
 namespace WPFUserInterface.ViewModels
 {
@@ -90,6 +91,8 @@ namespace WPFUserInterface.ViewModels
             {
                 ErrorMessage = "";
                 var result = await _apiHelper.Authenticate(UserName, Password);
+
+                // capture more information about the logged-in user 
             }
             catch (Exception ex)
             {

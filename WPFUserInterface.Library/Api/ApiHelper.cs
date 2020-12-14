@@ -6,9 +6,9 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
-using WPFUserInterface.Models;
+using WPFUserInterface.Library.Models;
 
-namespace WPFUserInterface.Helpers
+namespace WPFUserInterface.Library.Api
 {
     public class ApiHelper : IApiHelper
     {
