@@ -12,13 +12,13 @@ namespace DataManager.Controllers
     [Authorize]
     public class UserController : ApiController
     {
-        // GET: User
-        public List<UserModel> GetById()
+        [HttpGet]
+        public UserModel GetById()
         {
             string userId = RequestContext.Principal.Identity.GetUserId();
             UserData data = new UserData();
 
-            return data.GetUserByID(userId);
+            return data.GetUserByID(userId).First();
         }
     }
 }

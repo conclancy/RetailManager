@@ -93,6 +93,7 @@ namespace WPFUserInterface.ViewModels
                 var result = await _apiHelper.Authenticate(UserName, Password);
 
                 // capture more information about the logged-in user 
+                await _apiHelper.GetLoggedInUserInfo(result.Access_Token);
             }
             catch (Exception ex)
             {
